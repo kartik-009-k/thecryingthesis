@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>The Crying Thesis</title>
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;600&family=Dancing+Script:wght@600&display=swap" rel="stylesheet">
+
+<style>
+body {
+  margin: 0;
+  background: #ffd6e7; /* baby pink */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.book {
+  position: relative;
+  width: 420px;
+  height: 600px;
+  perspective: 3000px;
+}
+
+.page {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transform-origin: left;
+  transition: transform 1.3s ease;
+  cursor: pointer;
+}
+
+.page.flipped {
+  transform: rotateY(-180deg);
+}
+
+.front, .back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 40px;
+  box-sizing: border-box;
+  backface-visibility: hidden;
+  border-radius: 8px;
+  box-shadow: 0 20px 50px rgba(0,0,0,0.25);
+  overflow-y: auto;
+  background: #fff0f6;
+  font-family: 'Cormorant Garamond', serif;
+  line-height: 1.6;
+  font-size: 18px;
+}
+
+.back {
+  transform: rotateY(180deg);
+  background: #ffe4ef;
+}
+
+h1 {
+  font-family: 'Dancing Script', cursive;
+  text-align: center;
+  font-size: 40px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.quote {
+  font-style: italic;
+  margin-top: 20px;
+  text-align: center;
+}
+</style>
+</head>
+
+<body>
+
+<div class="book">
+
+<!-- COVER -->
+<div class="page" onclick="flipPage(this)" style="z-index:8;">
+<div class="front">
+<h1>The Crying Thesis</h1>
+</div>
+<div class="back">
+Preface
+</div>
+</div>
+
+<!-- PREFACE -->
+<div class="page" onclick="flipPage(this)" style="z-index:7;">
+<div class="front">
+<h2>Preface</h2>
+yeah i deactivated my account, why? i felt being a burden on her which i don't want to be. i cried af. not bcoz of her ofc but urgh. now that nothings really left in her for me ideally I should too become the same, but as we know in the universe nothing is ideal (unless cooled to -273°C which I'm not ) sooo how utterly diabolical sentences I've said I deactivated my account to not be a burden at the same time I'm saying I'm not ideal either, what do i mean? I mean nothing : ] all i can do is cry sooo i named this book "A crying thesis", now stfu and read the forecoming chapters "warning no fuckin part of this book is generated from ai and the quotes tho taken from famous people no due respect or acknowledgement provided
+</div>
+<div class="back">
+Chapter ZERO (I'm not able to decide a nice name if suggested will be incorporated in the next release) “I am not a poet, but if you  think for yourselves, as I proceed, the facts will form a poem in your minds.”
+</div>
+</div>
+
+<!-- CHAPTER ZERO CONTENT -->
+<div class="page" onclick="flipPage(this)" style="z-index:6;">
+<div class="front">
+sooo before everything who am i? who is she? (if you know you know, if you don't idgaf) soo one fine day routinely aligned till the last lecture there goes my hand something in my bag, what was it? a piece of paper, just a piece of paper?  with writings, before i could read some mf snatched it from me and when it was my time to read it was read by every single person except me once i read i was feeling as if my heart was taken out of my heart (nvm T-T) i felt accomplished i felt as if i would die at that moment i fell in love at that point, thank god i wasn't this dumb, the very moment i read it i was like 10000000% a prank and tbh i didn't even bother to think on it, until after the lecture was over i opened my inbox just to see some notes on it, tbh i didn't even connect that to the letter for a while (its not I'm dumb i strategise things) soo then i thought i asked every person about what was going on (not desperation but curiosity) sooo i got anyways all you should know is it was somehow revealed it was a prank and that's it sooo who revealed it? a charming woman (too mature to be addressed as a girl) soooo due some intel infos I've been hearing that she used to stare me which was true as she admitted but as a involuntary exercise okay sooooooooooooo something happened (ngl i really forgot most of it and remaining doesn't seem to make sense ) and we dated each other
+</div>
+<div class="back">
+Chapter 1 The Golden Days? “A man may imagine things  that are false, but he can only understand things that are true.”
+</div>
+</div>
+
+<!-- CHAPTER 1 CONTENT -->
+<div class="page" onclick="flipPage(this)" style="z-index:5;">
+<div class="front">
+Golden Days? if not more than that.... soo what was sooo "golden" in it you ask? the presence of someone who is going to be with you and atleast promises to stay with you no matter how hard times are, people say why do i cry? i lost this, shouldn't i? someone said “I can live with doubt and ﻿ uncertainty and not knowing. ﻿ I think it is much more ﻿ interesting to live not ﻿ knowing than to have ﻿ answers that might be ﻿ wrong.”  sometimes i used to feel like she doesn't like me the first break up was kinda weird uk maybe she was ambiguous about me but then she didn't disappoint me either she gave me a pinkkkkkkkkk kinderjoy, but then with it was a letter tbh till reading it i had never felt such hard hitting sensations i was like as the name of the books include crying, but how would she let her bbg cry long?
+</div>
+<div class="back">
+Chapter 3 BBG strikes back?  
+ii will continue later
+</div>
+</div>
+
+</div>
+
+<script>
+function flipPage(page) {
+  page.classList.toggle("flipped");
+}
+</script>
+
+</body>
+</html>
